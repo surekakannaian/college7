@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: azure;
+    height: 13vh;
+}
+.name{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.name .img1{
+    width: 50px;
+    margin-top: 3px;
+    margin-right: 65px;
+
+}
+.name .img2{
+    width: 40px;
+    margin-top: 7px;
+    margin-left: 65px;
+}
+.name h1{
+    color: blue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.name h2{
+    color: rgb(189, 5, 5);
+    margin-left: 90px;
+}
+
+.carousel{
+  height: 400px;
+  position: relative;
+  display: block;
+}
+.carousel-item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  transition: all 2s ease;
+  opacity: 0;
+}
+.arrow{
+    border: solid white;
+    border-width: 0px 7px 7px 0px;
+    display: inline-block;
+    padding: 12px;
+}
+.arrow-prev{
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+.arrow-next{
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.first{
+    z-index: 2;
+    opacity: 1;
+    background-image: url("images/collegepic4.png");
+   background-size: cover;
+}
+
+.second{
+    background-image: url("images/collegepic2.png");
+    background-size: cover;
+    background-position: center;
+}
+.third{
+    background-image: url("images/collegepic3.png");
+    background-size: cover;
+}
+
+*:target~ .first{
+    opacity: 0;
+}
+#first:target~ .first{
+    opacity: 1;
+}
+#second:target~ .second , #third:target~ .third {
+opacity: 1;
+z-index: 3;
+}
+ .menu
+{
+    font-size: 30px;
+    display: none;
+}
+#check{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+    background-color: rgb(19, 139, 219);
+    justify-content: center;
+}
+.nav-bar ul li{
+    list-style: none;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+.nav-bar ul li:hover{
+    background-color: rgb(247, 36, 36);
+}
+.nav-bar ul li .a{
+    display: none;
+}
+.nav-bar ul li:hover .a{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.nav-bar ul li .b{
+    display: none;
+}
+
+.nav-bar ul li:hover .b{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.nav-bar ul li .c{
+    display: none;
+}
+.nav-bar ul li:hover .c{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.nav-bar ul li .d{
+    display: none;
+}
+.nav-bar ul li:hover .d{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.nav-bar ul li .e{
+    display: none;
+}
+.nav-bar ul li:hover .e{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.nav-bar ul li .f{
+    display: none;
+}
+.nav-bar ul li:hover .f{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.nav-bar ul li .g{
+    display: none;
+}
+.nav-bar ul li:hover .g{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.cards{
+    display: flex;
+    height: 75vh;
+justify-content: center;
+}
+ .card1{
+    width: 28%;
+    margin-top: 3%;
+    margin-left: 2%;
+    box-shadow: 1px 3px 2px 1px gray;
+    padding-left: 10px;
+    border-radius: 12px;
+}
+#card1 img{
+height: 10%;
+margin-left: 140px;
+}
+.card1 h2{
+    font-size: 20px;
+   text-align: center;
+   margin-top: 35px;
+   color: rgb(11, 11, 94);
+}
+.card1 h3{
+    font-size: 15px;
+}
+#card1 h3{
+    color: green;
+}
+#card3 a{
+    text-decoration: none;
+    margin-left: 250px;
+}
+.quicklinks{
+    box-shadow: 2px 3px 2px 2px gray; 
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 80px;
+    height: 30vh;
+    border-radius: 12px;
+    
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+}
+.box div{
+    color: white;
+    text-shadow: 1px 1px 3px;
+    height: 70px;
+    width: 130px;
+    background-image: linear-gradient(to left ,rgb(44, 56, 216),blue);
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    padding-top: 40px;
+    border-radius: 12px;
+    letter-spacing: 2px;
+}
+footer{
+    height: 30vh;
+    background-image: linear-gradient(black,rgb(34, 27, 27));
+    margin-top: 60px;
+}
+small{
+    display: flex;
+    color: rgb(138, 126, 126);
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    margin-right: 150px;
+    margin-top: 65px;
+}
+@media only screen and ( max-width:900px)
+{
+
+    .name h1{
+            color: blue;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            font-size: 21.98px;
+            margin-left: 30px;
+        }
+        .name h2{
+            color: rgb(189, 5, 5);
+            margin-left: 30px;
+            font-size: 14px;
+        }
+        .name .img1{
+            width: 30px;
+            margin-top: 3px;
+            margin-right: 65px;
+        
+        }
+        .name .img2{
+            width: 30px;
+            margin-top: 7px;
+            margin-left: 65px;
+        }
+        #card1 img{
+        
+            margin-left: 50px;
+            }
+            .cards{
+                height: 125vh;
+            } 
+    
+}  
+@media  screen and ( max-width:1200px)
+{   .menu{
+    display: block;
+    position: relative;
+}
+   
+  .nav-bar ul{
+        display: block;
+        width: 50%;
+        height: 80vh;
+        background: #2c3e;
+        text-align: center;
+        margin-left: -100%;
+        transition: all 1s;
+        position: absolute;
+    }
+    #check:checked ~ ul{
+       margin-left: 0;
+       position: relative;
+    }
+  ul li:hover ul li{
+    display: none;
+
+  }
+  #card3 a{
+    margin-left: 50px;
+}
+.quicklinks{
+    margin-left: 40px;
+}
+.box div{
+    text-shadow: none;
+    height: 50px;
+    width: 63px;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 12px;
+    font-size: 7px;
+}   
+.left{
+    margin-right: 50px;
+    margin-top: 65px;
+    margin-left: 10px;
+}
+}
+@media only screen and ( max-width:480px)
+{
+
+    .name h1{
+            font-size: 12px;
+            margin-left: 1px;
+            text-shadow: none;
+        }
+        .name h2{
+            color: rgb(189, 5, 5);
+            margin-left: 30px;
+            font-size: 9px;
+        }
+        .name .img1{
+            width: 30px;
+            margin-top: 3px;
+        
+        }
+        .name .img2{
+            width: 30px;
+            margin-top: 7px;
+        }
+        #card1 img{
+        
+            margin-left: 10px;
+            }
+            .cards{
+                height: 50vh;
+                font-size: 10px;
+            } 
+            #card3 a{
+                margin-left: 10px;
+            }
+            .quicklinks{
+                width: 100%;
+                margin-left: 1px;
+                font-size: 8px;
+                height:20vh ;
+            }
+            .cards h2{
+                font-size: 7px;
+            }
+            .cards h3{
+                font-size: 6px;
+            }
+            
+.box {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+   
+}
+.box div{
+    color: white;
+    text-shadow: none;
+    height: 50px;
+    width: 60px;
+     padding-left: 0;
+     padding-right: 0;
+     margin-left: 1px;
+    letter-spacing: 0px;
+}
+   header{
+    height: 12vh;
+    width: 100%;
+   }
+   .heading{
+    width: 80%;
+    }
+
+        }
+    
